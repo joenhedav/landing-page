@@ -6,7 +6,6 @@ body {
 }
 
 /* header */
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -14,7 +13,8 @@ body {
   padding: 8px 0;
 }
 
-.hero {
+.hero,
+.footer {
   background-color: rgb(31, 41, 55);
 }
 
@@ -26,25 +26,18 @@ body {
   align-items: center;
 }
 
-.content {
-  margin: 90px;
-}
-
 .main {
   width: 50%;
 }
 
-button {
-  background-color: rgb(56, 130, 246);
-  border: none;
-  padding: 8px 32px;
-  border-radius: 8px;
+.content {
+  margin: 100px 0 100px; 
 }
 
 .main h1 {
   font-size: 48px;
-  font-weight: 900;
   margin: 0;
+  font-weight: 900;
 }
 
 .main p {
@@ -60,13 +53,8 @@ button {
 
 .logo,
 .main,
-button {
+.placeholder p {
   color: rgb(249, 250, 248);
-}
-
-button {
-  font-size: 18px;
-  font-weight: 900;
 }
 
 ul {
@@ -76,30 +64,156 @@ ul {
 }
 
 a,
-p {
+button,
+p, 
+.footer {
   font-size: 18px;
   color: rgb(229, 231, 235);
+  text-decoration: none;
 }
 
-a {
-text-decoration: none;
+button {
+  background-color: rgb(56, 130, 246);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 32px;
+  font-weight: 900;
 }
 
 .placeholder {
-  background-color: rgb(169, 169, 169, 0.5);
   flex: 1;
-  height: 250px;
+  background-color: rgb(169, 169, 169, 0.5);
   display: flex;
+  height: 250px;
   justify-content: center;
   align-items: center;
 }
 
 .placeholder p {
-  color: rgb(229, 231, 235);
-  font-weight: 400;
   font-size: 18px;
 }
 
 /* info */
 
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: rgb(31, 41, 55);
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.title,
+.info-container {
+  margin-top: 45px;
+}
+
+.info-container {
+  display: flex;
+  gap: 48px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  width: 165px;
+  margin-bottom: 100px;
+}
+
+.info-placeholder {
+  height: 150px;
+  border: 4px solid rgb(56, 130, 256);
+  border-radius: 16px;
+}
+
+.info-subtext {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 18px;
+  color: rgb(31, 41, 55, 0.7);
+}
+
+/* quote */
+
+.quote-container {
+  background-color: rgb(229, 231, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  width: 59%;
+  margin-top: 75px;
+}
+
+.quote p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(31, 41, 55, 0.9);
+  margin-bottom: 0;
+}
+
+.author {
+  margin-left: 475px;
+  color: rgb(31, 41, 55);
+  font-size: 24px; 
+  font-weight: 800;
+  margin-bottom: 75px;
+}
+
+/* call to action */
+
+.call-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px;
+} 
+
+.call {
+  background-color: rgb(56, 130, 246);
+  width: 80%;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px; 
+}
+
+.call-content {
+  width: 80%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-left p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.call-left .subtitle {
+  font-weight: 900;
+  font-size: 24px; 
+}
+
+.call-right button {
+  border: 2px solid white;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 32px;
+}
 
